@@ -44,6 +44,23 @@ const PROJECTS = [
     links: [{ label: "GitHub", url: "https://github.com/Sharon1-cmd/Computer-Vision-Classification" }],
     accent: "#F5A623",
   },
+  {
+    title: "IoT Cloud File Manager",
+    tag: "IoT · Cloud Storage · Duplicate Detection",
+    desc: "A cloud-based file management platform with IoT integration. Features intelligent duplicate file detection and removal, remote file access via a cloud interface, and storage optimisation tools — enabling users to manage files across devices from a centralised system.",
+    links: [],
+    accent: "#FF6B8A",
+  },
+];
+
+const EXPERIENCE = [
+  {
+    role: "Technical Support",
+    company: "Medcity International Academy",
+    period: "Sep 2024 – Dec 2024",
+    desc: "Provided frontline IT support for staff and students — diagnosing hardware and software issues, responding to inquiries via calls, emails, and chat, and delivering step-by-step resolutions. Escalated complex issues to senior teams and maintained a high standard of customer service throughout.",
+    tags: ["Technical Troubleshooting", "Diagnostics", "Customer Support", "IT Helpdesk"],
+  },
 ];
 
 const TIME_SLOTS = [
@@ -655,31 +672,10 @@ export default function Portfolio() {
           <p className="section-label">Where I've been</p>
           <h2 className="section-title">Experience</h2>
           <p style={{ color: "#8A86A0", fontSize: 16, maxWidth: 480, marginBottom: 40, lineHeight: 1.7 }}>
-            My professional journey — roles, internships, and work that shaped how I think.
+            My professional journey — roles and work that shaped how I think.
           </p>
-
-          {/* EMPTY STATE — remove once you add real experiences */}
-          <div className="exp-empty">
-            <div style={{ fontSize: 40, marginBottom: 16 }}>🚀</div>
-            <p style={{ fontFamily: "'Space Grotesk', sans-serif", fontWeight: 600, fontSize: 18, color: "#C4B8FF", marginBottom: 10 }}>
-              Experiences coming soon
-            </p>
-            <p style={{ color: "#6A6680", fontSize: 15, maxWidth: 340, margin: "0 auto", lineHeight: 1.65 }}>
-              This section is ready and waiting. Add roles, internships, or research positions whenever you're ready.
-            </p>
-          </div>
-
-          {/* ── EXAMPLE (uncomment and edit to use) ──
-          <div style={{ display: "flex", flexDirection: "column", gap: 20, marginTop: 8 }}>
-            {[
-              {
-                role: "Your Role Here",
-                company: "Company / Organization",
-                period: "Jan 2025 – Present",
-                desc: "A short description of what you did and what you achieved.",
-                tags: ["Python", "ML", "Relevant Skill"],
-              },
-            ].map((exp, i) => (
+          <div style={{ display: "flex", flexDirection: "column", gap: 20 }}>
+            {EXPERIENCE.map((exp, i) => (
               <FadeInSection key={exp.role} delay={i * 80}>
                 <div className="card" style={{ display: "flex", flexDirection: "column", gap: 12 }}>
                   <div style={{ display: "flex", justifyContent: "space-between", flexWrap: "wrap", gap: 8 }}>
@@ -691,13 +687,12 @@ export default function Portfolio() {
                   </div>
                   <p style={{ color: "#8A86A0", fontSize: 15, lineHeight: 1.7 }}>{exp.desc}</p>
                   <div style={{ display: "flex", flexWrap: "wrap", gap: 8 }}>
-                    {exp.tags.map(t => <span key={t} className="skill-tag">{t}</span>)}
+                    {exp.tags.map(t => <span key={t} className="skill-tag tool">{t}</span>)}
                   </div>
                 </div>
               </FadeInSection>
             ))}
           </div>
-          ──────────────────────────────── */}
         </FadeInSection>
       </section>
 
