@@ -24,24 +24,24 @@ const SKILLS = [
 
 const PROJECTS = [
   {
-    title: "TrendWatch AI",
-    tag: "NLP · Sentiment Analysis",
-    desc: "A social media intelligence platform built on Sentiment140 and GPT-4o-mini. Surfaces real-time sentiment trends with an interactive dashboard.",
-    links: [],
+    title: "Social Media Intelligent Platform",
+    tag: "NLP · LLM · RAG · React Dashboard",
+    desc: "End-to-end brand monitoring platform on 9,929 Reddit posts. Combines 8 basic NLP techniques (NER, TF-IDF, K-Means, Word2Vec) with 9 advanced LLM methods — Twitter-RoBERTa, FAISS RAG, ReAct agent, crisis detection, multilingual analysis, and automated reporting. 85.7% sentiment F1, 91% crisis recall.",
+    links: [{ label: "GitHub", url: "https://github.com/Sharon1-cmd/Social-Media-Intelligent-Platform" }],
     accent: "#7C5CFC",
   },
   {
-    title: "LLM Financial Chatbot",
-    tag: "LLM · Gradio · Deployment",
-    desc: "A Gradio-based conversational AI for financial queries. Explored deployment tradeoffs across Hugging Face Spaces and cloud platforms.",
+    title: "Personal Financial Advisory Assistant",
+    tag: "LLM · LoRA · Gradio · yfinance",
+    desc: "Mistral-7B-Instruct powered chatbot with an 8-stage multi-turn dialogue system, live market data via Yahoo Finance, and role-based + chain-of-thought prompting. Includes LoRA fine-tuning of TinyLlama on a custom financial instruction dataset. Built with Gradio on Google Colab.",
     links: [{ label: "GitHub", url: "https://github.com/Sharon1-cmd/LLM_Chatbot" }],
     accent: "#A8F0E0",
   },
   {
-    title: "Advanced CV Research",
-    tag: "Computer Vision · CNNs",
-    desc: "Deep-dives into CNN architectures and action recognition as part of COMP8430 at Macquarie University. Covers theory through implementation.",
-    links: [],
+    title: "Fine-Grained Image Classification",
+    tag: "Computer Vision · Transfer Learning · Robot Deployment",
+    desc: "Three-phase CV project classifying protein bar products from images. Phase 1: zero-shot transfer learning with ResNet50 & VGG16. Phase 2: fine-tuning with MixUp, CutOut, RandAugment. Phase 3: robot-camera domain adaptation — 96.67% accuracy after fine-tuning on 300 robot images.",
+    links: [{ label: "GitHub", url: "https://github.com/Sharon1-cmd/Computer-Vision-Classification" }],
     accent: "#F5A623",
   },
 ];
